@@ -1,0 +1,122 @@
+<div mat-dialog-title>
+  <h1>Dados do Produto</h1>
+</div>
+
+<form [formGroup]="productForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input
+            matInput
+            placeholder="Ex. Brown Perfume"
+            formControlName="title"
+            required />
+          <mat-error> Campo obrigatório. </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>ID</mat-label>
+          <input
+            matInput
+            placeholder="123"
+            type="number"
+            formControlName="id" />
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Marca</mat-label>
+          <input
+            matInput
+            placeholder="Ex. Royal_Mirage"
+            formControlName="brand" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Avaliação</mat-label>
+          <input
+            matInput
+            placeholder="Ex. 4.50"
+            type="number"
+            formControlName="rating" />
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Categoria</mat-label>
+          <mat-select formControlName="category">
+            <mat-option
+              *ngFor="let category of categories"
+              [value]="category"
+              >{{ category }}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Preço</mat-label>
+          <input
+            matInput
+            placeholder="Ex. 40"
+            type="number"
+            formControlName="price"
+            required />
+          <mat-error> Campo obrigatório. </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Desconto (%)</mat-label>
+          <input
+            matInput
+            placeholder="Ex. 2.50"
+            type="number"
+            formControlName="discountPercentage" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Estoque</mat-label>
+          <input
+            matInput
+            placeholder="Ex. 20"
+            type="number"
+            formControlName="stock" />
+        </mat-form-field>
+      </div>
+      <div class="row" id="description">
+        <mat-form-field appearance="outline" id="description">
+          <mat-label>Descrição</mat-label>
+          <input matInput formControlName="description" />
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="images">
+      <div class="row">
+        <mat-form-field appearance="outline" id="thumbnail">
+          <mat-label>Imagem de capa</mat-label>
+          <input matInput formControlName="thumbnail" />
+          <mat-hint>800x800px</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline" id="images">
+          <mat-label>Links imagens</mat-label>
+          <input matInput formControlName="images" />
+          <mat-hint>Links separados por vírgula</mat-hint>
+        </mat-form-field>
+      </div>
+      <div class="thumbnail-text">
+        <span>Capa atual:</span>
+      </div>
+      <div class="image-row" *ngIf="data?.thumbnail || data?.images">
+        <div *ngIf="data?.thumbnail">
+          <img [src]="data.thumbnail" alt="Thumbnail" class="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">
+      Cancelar
+    </button>
+    <button mat-raised-button color="primary" type="submit">
+      {{ data ? 'Atualizar' : 'Salvar' }}
+    </button>
+  </div>
+</form>

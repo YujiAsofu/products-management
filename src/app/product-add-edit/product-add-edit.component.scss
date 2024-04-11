@@ -1,0 +1,73 @@
+.row {
+  display: flex;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+#description {
+  width: 100%;
+}
+
+.action {
+  padding: 0px 25px 20px;
+  button {
+    flex: 1;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.images {
+  margin-left: 20px;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 25px;
+}
+
+.thumbnail-text {
+  margin-top: 15px;
+}
+
+.image-row {
+  display: flex;
+  gap: 10px;
+  padding-top: 5px;
+  justify-content: center;
+}
+
+.input-file {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.mat-form-field-wrapper {
+  position: relative;
+}
+
+.mat-form-field-wrapper::after {
+  content: 'Selecione um arquivo';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mat-form-field-wrapper:hover::after {
+  background-color: #0056b3;
+}

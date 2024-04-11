@@ -1,0 +1,21 @@
+.toolbar {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+  max-width: 66%;
+}
+
+.main-body {
+  padding-top: 20px;
+  margin: 0 auto;
+  mat-form-field {
+    width: 100%;
+  }
+  max-width: 65%;
+}
