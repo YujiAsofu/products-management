@@ -39,8 +39,8 @@ Uma vez iniciado, abra em seu navegador a URL `http://localhost:4200/`.
 
 ## Próxima sprint
 
-⌛ Tela de login: Tratamento de dados incorretos;
-⌛ Produtos: Adicionar input de imagem no lugar de URL (formulário do produto);
-⌛ Tela de login: Tratamento de erros;
-⌛ Cadastro de produtos: Tratamento de erros;
+⌛ Tela de login: Tratamento de dados incorretos;<br/>
+⌛ Produtos: Adicionar input de imagem no lugar de URL (formulário do produto);<br/>
+⌛ Tela de login: Tratamento de erros;<br/>
+⌛ Cadastro de produtos: Tratamento de erros;<br/>
 ⌛ Criação de testes unitários;
