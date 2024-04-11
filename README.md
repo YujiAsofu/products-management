@@ -22,6 +22,10 @@ npm install
 Execute `ng serve` para iniciar o servidor de desenvolvimento.<br/>
 Uma vez iniciado, abra em seu navegador a URL `http://localhost:4200/`.
 
+### Dados de login:
+- Usuário: kminchelle
+- Senha: 0lelplR
+
 # Sprint Review
 
   ✔ Requisições para API;<br/>
