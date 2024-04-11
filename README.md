@@ -9,7 +9,7 @@ Para rodar o projeto em sua máquina, certifique-se de ter o Node.js e o npm ins
 ## Instalação
 
 1. Clone este repositório:
-git clone https://github.com/YujiAsofu/product-list.git
+git clone https://github.com/YujiAsofu/products-management.git
 
 2. Navegue até o diretório do projeto:
 cd product-list
@@ -33,9 +33,14 @@ Uma vez iniciado, abra em seu navegador a URL `http://localhost:4200/`.
   ✔ Adicionar produto novo (confirmação através do console);<br/>
   ✔ Edição de produtos (confirmação através do console);<br/>
   ✔ Remoção de produto (confirmação através do console);<br/>
+  ✔ Tela de login;<br/>
+  ✔ Autenticação;<br/>
+  ✔ Unsubscribe dos Observables;<br/>
 
 ## Próxima sprint
 
-⌛ Criação da interface da tela de login;<br/>
-⌛ API de autenticação;<br/>
-⌛ Melhoria: Adicionar input de imagem no lugar de URL (formulário do produto);
+⌛ Tela de login: Tratamento de dados incorretos;
+⌛ Produtos: Adicionar input de imagem no lugar de URL (formulário do produto);
+⌛ Tela de login: Tratamento de erros;
+⌛ Cadastro de produtos: Tratamento de erros;
+⌛ Criação de testes unitários;
