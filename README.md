@@ -10,7 +10,7 @@ Para rodar o projeto em sua máquina, certifique-se de ter o Node.js e o npm ins
 
 ```
 git clone https://github.com/YujiAsofu/products-management.git
-cd product-list
+cd products-management
 npm install
 ```
 
