@@ -8,14 +8,11 @@ Para rodar o projeto em sua máquina, certifique-se de ter o Node.js e o npm ins
 
 ## Instalação
 
-1. Clone este repositório:
+```
 git clone https://github.com/YujiAsofu/products-management.git
-
-2. Navegue até o diretório do projeto:
 cd product-list
-
-3. Instale as dependências do npm:
 npm install
+```
 
 ## Como executar
 
